@@ -1,5 +1,11 @@
 # 🎴 Profile Card – React + Three.js
 
+![React](https://img.shields.io/badge/React-18-blue)
+![Vite](https://img.shields.io/badge/Vite-5-purple)
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-yellow)
+![Status](https://img.shields.io/badge/Status-Concluído-green)
+![License](https://img.shields.io/badge/License-MIT-green)
+
 Este projeto é uma **Profile Card interativa em 3D**, desenvolvida com **React** e **Three.js**, focada em **design moderno**, **animações suaves** e **experiência visual diferenciada**. A aplicação simula um cartão de perfil com efeitos 3D, ideal para portfólio pessoal ou apresentação profissional.
 
 🔗 **Demo online:** [https://profile-card-react-three.vercel.app/](https://profile-card-react-three.vercel.app/)
