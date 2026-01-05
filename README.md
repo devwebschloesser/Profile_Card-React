@@ -1,107 +1,189 @@
-# 👤 Profile Card – React
+# 🎴 Profile Card – React + Three.js
 
-Projeto desenvolvido em **React** com o objetivo de criar um **card de perfil reutilizável**, exibindo informações pessoais e profissionais de forma organizada e moderna.
+Este projeto é uma **Profile Card interativa em 3D**, desenvolvida com **React** e **Three.js**, focada em **design moderno**, **animações suaves** e **experiência visual diferenciada**. A aplicação simula um cartão de perfil com efeitos 3D, ideal para portfólio pessoal ou apresentação profissional.
 
-Este projeto é ideal para uso em **portfólios**, **páginas pessoais** ou como base para aplicações maiores que trabalham com perfis de usuários.
-
----
-
-## 🌐 Descrição do Projeto
-
-A aplicação renderiza um componente `Profile que recebe dados via **props** e exibe:
-
-* Avatar do usuário
-* Nome
-* Biografia profissional
-* Informações de contato
-* Links para redes sociais
-
-O foco principal do projeto é a **componentização**, **reutilização de código** e passagem correta de dados no React.
+🔗 **Demo online:** [https://profile-card-react-three.vercel.app/](https://profile-card-react-three.vercel.app/)
 
 ---
 
 ## 🚀 Tecnologias Utilizadas
 
-* **React.js** – Biblioteca principal da aplicação
-* **JavaScript (ES6+)** – Lógica e estrutura
-* **JSX** – Sintaxe declarativa para componentes
-* **CSS** – Estilização do layout
-* **Vite** – Ambiente de desenvolvimento
-* **Node.js / npm** – Gerenciamento de dependências
+* **React.js** – Biblioteca principal para construção da interface
+* **Three.js** – Renderização 3D no navegador
+* **@react-three/fiber** – Integração do Three.js com React
+* **@react-three/drei** – Utilitários para facilitar o uso do Three.js
+* **JavaScript (ES6+)**
+* **Vite** – Bundler rápido para desenvolvimento
+* **CSS** – Estilização da aplicação
 
 ---
 
+## 🎯 Objetivo do Projeto
 
-## 🧩 Componente Profile
+Demonstrar habilidades em:
 
-O componente `Profile` é totalmente reutilizável e recebe as seguintes **props**:
-
-jsx
-avatar: string (URL da imagem)
-name: string
-bio: string
-email: string
-phone: string
-githubUrl: string
-linkedinUrl: string
-instagramUrl: string
-
-
-Essas propriedades permitem que o mesmo componente seja utilizado para diferentes perfis, alterando apenas os dados.
+* React moderno
+* Manipulação de cenas 3D no navegador
+* Integração entre UI tradicional e elementos 3D
+* Criação de interfaces interativas para portfólio
 
 ---
 
-## 📄 App.jsx
+## 📂 Estrutura de Pastas (Padrão)
 
-O componente `App é responsável por:
+```bash
+profile-card-react-three
+├── public
+│   └── index.html
+│
+├── src
+│   ├── components
+│   │   └── ProfileCard.jsx
+│   ├── styles
+│   │   └── global.css
+│   ├── App.jsx
+│   └── main.jsx
+│
+├── package.json
+├── vite.config.js
+└── README.md
+```
 
-* Importar o componente `Profile
-* Definir os dados do perfil
-* Passar as informações via props
-
-Exemplo de uso:
-
-jsx
-<Profile
-  avatar="URL"
-  name="Nome"
-  bio="Descrição"
-  email="email@email.com"
-/>
-
-
----
-
-## 🎯 Objetivos do Projeto
-
-* Praticar **React básico**
-* Trabalhar com **props**
-* Criar **componentes reutilizáveis**
-* Organizar um projeto React com Vite
-* Desenvolver um card de perfil profissional
+> A estrutura pode variar levemente conforme a evolução do projeto.
 
 ---
 
-## 🚀 Possíveis Melhorias Futuras
+## 🔧 Pré-requisitos
 
-* Tornar o layout responsivo
-* Adicionar tema claro/escuro
-* Tornar os links configuráveis via JSON
-* Integração com API (GitHub, LinkedIn)
-* Animações com CSS ou Framer Motion
+Antes de iniciar, certifique-se de ter instalado:
+
+* **Node.js** (versão 18 ou superior recomendada)
+* **NPM** ou **Yarn**
+* **Git**
+
+Verifique se o Node está instalado:
+
+```bash
+node -v
+npm -v
+```
+
+---
+
+## 📥 Como Clonar o Projeto
+
+```bash
+git clone https://github.com/devwebschloesser/profile-card-react-three.git
+cd profile-card-react-three
+```
+
+---
+
+## 📦 Instalação das Dependências
+
+```bash
+npm install
+# ou
+yarn
+```
+
+---
+
+## ▶️ Como Rodar o Projeto Localmente
+
+Após instalar as dependências, execute:
+
+```bash
+npm run dev
+```
+
+O projeto estará disponível em:
+
+👉 **[http://localhost:5173](http://localhost:5173)**
+
+---
+
+## 🖱️ Funcionalidades
+
+* Cartão de perfil em 3D
+* Animações suaves baseadas em interação
+* Renderização WebGL no navegador
+* Layout responsivo
+* Design moderno e minimalista
+
+---
+
+## 🎨 Customização
+
+Você pode personalizar facilmente:
+
+* 📌 Nome e informações do perfil
+* 🎨 Cores e estilos no CSS
+* 🧊 Geometria e materiais do objeto 3D
+* 🌀 Animações e interações do mouse
+
+Os principais ajustes ficam dentro de:
+
+```bash
+src/components/ProfileCard.jsx
+```
+
+---
+
+## 🧠 Conceitos Aplicados
+
+* Componentização com React
+* Cena 3D com Three.js
+* Hooks do React
+* Separação de responsabilidades
+* Performance com Vite
+
+---
+
+## 📦 Build para Produção
+
+Para gerar a versão otimizada do projeto:
+
+```bash
+npm run build
+```
+
+Os arquivos finais serão gerados na pasta:
+
+```bash
+dist/
+```
+
+---
+
+## 🌐 Deploy
+
+O projeto foi publicado utilizando **Vercel**.
+
+Para fazer deploy:
+
+```bash
+npm install -g vercel
+vercel
+```
+
+---
+
+## 🧪 Testes
+
+> Este projeto não possui testes automatizados no momento.
 
 ---
 
 ## 👨‍💻 Autor
 
-**Leonardo Schloesser**
-Desenvolvedor Full Stack 🚀
+**Leonardo Schloesser Pinheiro**
+Desenvolvedor Full Stack
 
-* 📧 Email: [devwebschloesser@gmail.com](mailto:devwebschloesser@gmail.com)
-* 💻 GitHub: [https://github.com/devwebschloesser](https://github.com/devwebschloesser)
-* 🔗 LinkedIn: [https://www.linkedin.com/in/leonardo-schloesser-pinheiro-github-devwebschloesser-a0311b303/](https://www.linkedin.com/in/leonardo-schloesser-pinheiro-github-devwebschloesser-a0311b303/)
-* 📸 Instagram: [https://www.instagram.com/_77catarina/](https://www.instagram.com/_77catarina/)
+
+🔗 GitHub: [https://github.com/devwebschloesser](https://github.com/devwebschloesser)
+🔗 LinkedIn: [https://www.linkedin.com/in/leonardo-schloesser-0043a81b3/](https://www.linkedin.com/in/leonardo-schloesser-0043a81b3/)
 
 ---
 
-⭐ Projeto desenvolvido para fins educacionais e portfólio.
+⭐ Se você gostou deste projeto, não esqueça de deixar uma estrela no repositório!
